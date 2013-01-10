@@ -435,7 +435,7 @@ function TryTogglePause( )
 function Randrange( x, y )
 {
 	var r = x + Math.floor( Math.random( ) * ( y - x ) );
-	return ( r == y ) ? y - 1 : r;	//Protect against rare rounding error
+	return ( r > y - 1 ) ? y - 1 : r;	//Protect against rare rounding error
 }
 
 //AI for the CPU paddle - basically just follows the ball around
