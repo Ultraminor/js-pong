@@ -41,7 +41,11 @@
 			container = document.getElementById( "container" );
 			container.style.top = Pixels( ( document.body.offsetHeight - container.offsetHeight ) / 2 );
 			
+			window.onmousemove = HandleMouseMove;	
+			window.onclick = HandleMouseClick;		
 			SpawnPong( container );
+			container.firstChild.onmousemove = null;
+			container.firstChild.onclick = null;
 		};
 		
 		window.onresize = function( ) { container.style.top = Pixels( ( document.body.offsetHeight - container.offsetHeight ) / 2 ); };
