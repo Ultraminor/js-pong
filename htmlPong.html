@@ -42,10 +42,10 @@
 			container.style.top = Pixels( ( document.body.offsetHeight - container.offsetHeight ) / 2 );
 			
 			window.onmousemove = HandleMouseMove;	
-			window.onclick = HandleMouseClick;		
+			window.onmousedown = HandleMouseClick;		
 			SpawnPong( container );
 			container.firstChild.onmousemove = null;
-			container.firstChild.onclick = null;
+			container.firstChild.onmousedown = null;
 		};
 		
 		window.onresize = function( ) { container.style.top = Pixels( ( document.body.offsetHeight - container.offsetHeight ) / 2 ); };
