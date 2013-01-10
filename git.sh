@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git add ./
+read -p "Commit message: " message;
+git commit -m "$message";
+git push -u origin master

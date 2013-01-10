@@ -1,0 +1,13 @@
+Javascript Pong
+Copyright 2013 Adam Richardson
+Distributed under the GNU General Public License
+
+Javascript Pong - simply call SpawnPong on an appropriate container element to begin.
+Features:
+	- Keyboard and mouse controls
+		- Space to launch, up/down arrows to move paddle, P to pause
+		- Click to launch or pause, move mouse to move paddle
+	- Auto-resizable - resizes with its container element
+
+It's not much, but have fun with it.
+-sigkill
