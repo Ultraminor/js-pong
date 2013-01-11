@@ -458,7 +458,7 @@ function WarpBall( paddleY, paddleDirection )
 	if( relative > PaddleLength - BallSize / 2 )
 		relative = PaddleLength - BallSize / 2;
 	
-	//We use this relative position to calculate a transformation angle, ranging from - 45 degress to + 45 degrees
+	//We use this relative position to calculate a transformation angle - from ( - WarpRange / 2 ) to ( WarpRange / 2 )
 	var angle = - ( WarpRange / 2 ) + WarpRange * relative / ( PaddleLength - BallSize / 2 );
 	
 	//Apply the paddle movement warp factor
