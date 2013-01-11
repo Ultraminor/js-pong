@@ -13,12 +13,15 @@
 	
 	background-color: #000;
 	
+	overflow: auto;
+	
 	cursor: none;
 }
 
 #playingField div
 {
 	position: absolute;
+	overflow: auto;
 }
 		
 #playingField p
